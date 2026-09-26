@@ -13,7 +13,7 @@ Iron Log is a dependency-free, mobile-first workout tracker intended for opening
 
 ## Backup behavior
 
-Exports include programs, phases, weeks, training days, exercises, workouts and sets, measurements, preferences, rest settings, active-program selection, and history. They use schema version 1 JSON.
+Exports include saved workout templates (including their exercise order, planned sets, rep ranges, and rest times), exercises, workouts and logged sets, measurements, preferences, legacy programs, and history. They use schema version 1 JSON. Older schema version 1 backups that do not yet have workout templates remain importable.
 
 Import validates the file before it changes data. **Restore / Replace** overwrites the current in-memory session after explicit confirmation. **Merge Backup** keeps current records and adds imported records whose stable IDs are not already present. Export a new backup after either option.
 
